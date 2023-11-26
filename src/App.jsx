@@ -18,7 +18,7 @@ const App = () => {
                 contentInsetAdjustmentBehavior="automatic"
             >
                 <View style={styles.Container}>
-                    <CustomAlert message={'Alert Message'} visible={true} state={'success'} onClose={() => { }} />
+                    <CustomAlert message={'Alert Message'} visible={true} state={'error'} onClose={() => { }} />
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     Container: {
         padding: 10,
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
     },
 });
 

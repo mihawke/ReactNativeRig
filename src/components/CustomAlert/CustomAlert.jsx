@@ -55,23 +55,25 @@ const CustomAlert = ({ state, visible, message, onClose }) => {
       visible={visible}
       onRequestClose={() => onClose()}
     >
-      <View style={[styles.container, { backgroundColor: AlertColors[0] }]}>
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          {AlertIcons[0]}
-          <Text
-            style={[styles.label,
-            {
-              color: AlertColors[1],
-              marginLeft: 5
-            }]}
-          >{message}
-          </Text>
-        </View>
-        <TouchableOpacity onPress={() => onClose()}>
-          <View>
-            {AlertIcons[1]}
+      <View style={styles.container}>
+        <View style={[styles.modalView , { backgroundColor: AlertColors[0] }]}>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            {AlertIcons[0]}
+            <Text
+              style={[styles.label,
+              {
+                color: AlertColors[1],
+                marginLeft: 5
+              }]}
+            >{message}
+            </Text>
           </View>
-        </TouchableOpacity>
+          <TouchableOpacity onPress={() => onClose()}>
+            <View>
+              {AlertIcons[1]}
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     </Modal>
   );
