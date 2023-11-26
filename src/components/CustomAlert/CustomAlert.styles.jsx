@@ -7,10 +7,14 @@ const styles = StyleSheet.create({
     width:"85%",
     borderRadius: 5,
     paddingVertical: 5,
-    paddingHorizontal:10
+    paddingHorizontal:15,
+    alignItems:'center',
+    justifyContent:'space-between'
   },
   label: {
-   
+    fontSize: 14,
+    lineHeight:24,
+    fontWeight: '700'
   },
 });
 
